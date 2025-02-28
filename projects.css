@@ -1,0 +1,66 @@
+:root {
+    --pink-color: #b948d8;
+    --orange-color: #f25a2c;
+    --green-color: #0f6753;
+    --blue-color: #1e4bae;
+    --background-color: #121212;
+    --footer-color: #474747;
+    --text-color: #818181;
+    --f1-color: #e8002d;
+    --label-color: #303030;
+
+
+    --old-color: #D9D9D9;
+    --oldaccent-color: #C9B5B2;
+}
+
+/* For Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #121212; /* Color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue-color); /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Roundness of the thumb */
+    border: 3px solid #121212; /* Creates padding around the thumb */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: auto; /* "auto" or "thin" */
+    scrollbar-color: var(--footer-color) #121212; /* thumb and track color */
+}
+
+
+// <weight>: Use a value from 400 to 700
+// <uniquifier>: Use a unique and descriptive class name
+
+.instrument-sans-<uniquifier> {
+    font-family: "Instrument Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+
+body, html {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.page-wrapper {
+    background-color: red;
+    width: 1200px;
+    height: 100%;
+}

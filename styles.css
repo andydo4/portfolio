@@ -1,0 +1,255 @@
+:root {
+    --pink-color: #b948d8;
+    --orange-color: #f25a2c;
+    --green-color: #0f6753;
+    --blue-color: #1e4bae;
+    --background-color: #121212;
+    --footer-color: #474747;
+    --text-color: #818181;
+    --f1-color: #e8002d;
+    --label-color: #303030;
+
+
+    --old-color: #D9D9D9;
+    --oldaccent-color: #C9B5B2;
+}
+
+/* For Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #121212; /* Color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue-color); /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Roundness of the thumb */
+    border: 3px solid #121212; /* Creates padding around the thumb */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: auto; /* "auto" or "thin" */
+    scrollbar-color: var(--footer-color) #121212; /* thumb and track color */
+}
+
+
+// <weight>: Use a value from 400 to 700
+// <uniquifier>: Use a unique and descriptive class name
+
+.instrument-sans-<uniquifier> {
+    font-family: "Instrument Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+
+body, html {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.hero-wrapper {
+    /// background-color: red;
+    transform: translateX(30px);
+    margin-top: 65%;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container {
+    font-family: 'Instrument Sans';
+}
+
+.hero-title {
+    display: flex;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.hero-title h1 {
+    color: white;
+    font-size: 96px;
+    font-weight: 700;
+    margin: 0;
+    transform: translateY(30px);
+}
+
+.hero-body h2 {
+    color: white;
+    font-size: 48px;
+    font-weight: 550;
+    margin: 10px;
+}
+
+.hero-ucf {
+    font-weight: 700;
+}
+
+.hero-blue-text {
+    color: var(--blue-color);
+    font-style: italic;
+}
+
+.hero-collage {
+    padding-left: 340px;
+    transform: translateY(-60px);
+}
+
+.hero-box {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+}
+
+.hero-inner-box {
+    width: 110px;
+    height: 15px;
+}
+
+.hero-a-list {
+    padding-left: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 10px;
+    display: flex;
+    gap: 110px;
+}
+
+.hero-a {
+    color: white;
+    text-decoration: none;
+}
+
+.arrow-divider {
+    margin-top: 200px;
+    padding-bottom: 30px;
+    user-select: none;
+    pointer-events: none;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.project-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-image {
+    width: 560px;
+    height: 450px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-label {
+    background-color: var(--label-color);
+    width: 560px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.project-label h2 {
+    font-family: 'Instrument Sans';
+    color: white;
+    padding-left: 10px;
+}
+
+.project-label p {
+    font-family: 'Instrument Sans';
+    color: var(--text-color);
+    padding-right: 10px;
+}
+
+.project-f1stats-img {
+    max-width: 90%;
+    max-height: 100%;
+    object-fit: cover;
+    transform: translateX(-280px);
+    transition: transform 0.3s ease;
+}
+
+.project-f1stats-gradient-img {
+    transform: translateX(303px);
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    z-index: 3;
+    user-select: none;
+    pointer-events: none;
+}
+
+.project-f1-a:hover .project-f1stats-img {
+    transform: translateX(-280px) scale(1.05);
+}
+
+.project-onyx-img {
+    max-width: 80%;
+    max-height: 100%;
+    object-fit: cover;
+    transform: translateX(-280px);
+    box-shadow: 0 4px 8px black;
+    transition: transform 0.3s ease;
+}
+
+.project-onyx-gradient-img {
+    transform: translateX(253px);
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    z-index: 3;
+    user-select: none;
+    pointer-events: none;
+}
+
+.project-onyx-a:hover .project-onyx-img {
+    transform: translateX(-280px) scale(1.05);
+}
+
+.footer-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 600px;
+}
+
+.footer-signature h2 {
+    font-family: 'Instrument Sans';
+    font-size: 1rem;
+    transform: translateX(28px);
+    color: var(--footer-color);
+}
+
+.footer-links a {
+    font-family: 'Instrument Sans';
+
+    color: var(--footer-color);
+    text-decoration: none;
+    padding: 30px;
+}
