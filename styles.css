@@ -197,10 +197,15 @@ body, html {
     padding-left: 10px;
 }
 
+.project-f1-a, .project-onyx-a {
+    text-decoration: none;
+}
+
 .project-label p {
     font-family: 'Instrument Sans';
     color: var(--text-color);
     padding-right: 10px;
+    text-decoration: none;
 }
 
 .project-f1stats-img {
