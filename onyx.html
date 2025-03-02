@@ -3,39 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="projects.css">
+    <link rel="icon" href="/components/person.svg">
     <title>Andrew Do</title>
 </head>
 <body>
     <div class="page-wrapper">
-        <div class="hero-container">
+        <a href="/index.html" class="back-container">
+            <img src="/components/back-arrow.svg" alt="">
+            <p>back</p>
+        </a>
+
+        <div class="hero-container scroll-animation">
             <div class="img-box">
-                <div class="img-content">
-                    <img src="/components/onyx-gradient-img.png" alt="">
-                    <img src="/components/onyx-img.JPG" alt="">
-                </div>
+                <img src="/components/onyx-img.png" alt="" class="img-onyx">
+                <img src="/components/onyx-gradient-img.png" alt="" class="img-gradient">
             </div>
             <h1>Onyx</h1>
             <div class="hero-info">
-                <p>A modern and minimalist study flashcards app</p>
-                <p>2025</p>
+                <p style="text-align: left">A modern and minimalist study flashcards app</p>
+                <p style="text-align: right">2025</p>
+            </div>
+            <div class="hero-buttons">
+                <div class="hero-skill-carousel">
+                    <p>JavaScript</p>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Node.js</p>
+                    <p>Express</p>
+                    <p>MongoDB</p>
+                    <p>Figma</p>
+                </div>
+                <div class="hero-links">
+                    <a href="https://github.com/andydo4/onyx-demo1">
+                        <img src="/components/github.svg" alt="">
+                        <p>Code</p>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=6jLTUKsMUUc">
+                        <img src="/components/youtube.svg" alt="">
+                        <p>Demo</p>
+                    </a>
+                </div>
             </div>
         </div>
 
-        <div class="line-break"></div>
+        <div class="line-break scroll-animation"></div>
 
         <div class="body-container">
             <div class="body-left-container">
-                <div class="body-left-paragraph">
+                <div class="body-left-paragraph scroll-animation">
                     <h2>Overview</h2>
-                    <p>I created a full stack web-based flashcards studying app, combining the best features of popular flashcard study tools into one modernized package. I designed my app with minimalism and simplicity in mind, to give students a distraction free environment to study flashcards.</p>
+                    <p>I created a full stack web-based flashcards studying app,
+                        combining the best features of popular flashcard study tools 
+                        into one modernized package. I designed my app with 
+                        minimalism and simplicity in mind, to give students a 
+                        distraction free environment to study flashcards.</p>
                 </div>
-                <div class="body-left-paragraph">
+                <div class="body-left-paragraph scr">
                     <h2>Problem</h2>
                     <p>Quizlet and Omnisets are not as versatile as Anki, but Anki’s user interface is too outdated. </p>
                 </div>
             </div>
-            <div class="key-contributions-container">
+            <div class="key-contributions-container scroll-animation">
+                <h2>key contributions</h2>
                 <p>designed user interface in <span class="key-contributions-bold">Figma</span></p>
                 <div class="key-contributions-linebreak"></div>
                 <p>developed front end using <span class="key-contributions-bold">HTML, CSS, JavaScript</span></p>
@@ -50,13 +81,175 @@
 
         <div class="line-break"></div>
 
+        <div class="research-container">
+            <div class="research-title">
+                <h2>Initial <span class="research-title-span">Research</span></h2>
+                <p>I started by using 3 popular flashcard tools: Quizlet, Omnisets, and Anki, taking note of features I like, dislike, and
+                    wish were available.</p>
+            </div>
 
+            <div class="research-features scroll-animation">
+                <div class="research-feature-box">
+                    <img src="/components/anki.png" alt="" class="research-img">
+                    <h4>Anki</h4>
+                    <p>Anki's interface is too outdated, and it's versatility <br>
+                    may overwhelm users. However, I love the spaced <br>
+                    repetition algorithms.
+                    </p>
+                </div>
+                <div class="research-feature-box">
+                    <img src="/components/quizlet.png" alt="" class="research-img">
+                    <h4>Quizlet</h4>
+                    <p>Quizlet's interface is too cluttered, and there are <br>
+                    many unnecessary features.
+                    </p>
+                </div>
+            </div>
 
+            <div class="survey-container scroll-animation">
+                <div class="survey-title">
+                    <h3>Surveys</h3>
+                    <p>I surveyed 10 students at UCF, and asked the 
+                    following questions:
+                    </p>
+                </div>
+                <div class="survey-questions">
+                    <div class="survey-q">
+                        <img src="/components/1.svg" alt="">
+                        <p>What is your favorite flashcards app?</p>
+                    </div>
+                    <div class="survey-q">
+                        <img src="/components/2.svg" alt="">
+                        <p>What do you like about it?</p>
+                    </div>
+                    <div class="survey-q">
+                        <img src="/components/3.svg" alt="">
+                        <p>What do you dislike about it?</p>
+                    </div>
+                    <div class="survey-q">
+                        <img src="/components/4.svg" alt="">
+                        <p>What features did you wish existed?</p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="findings-container scroll-animation">
+                <img src="/components/onyx/onyx-survey.png" alt="" class="onyx-survey">
+            </div>
 
+            <div class="line-break scroll-animation" style="margin-top: 0;"></div>
 
+            <div class="design-container scroll-animation">
+                <div class="design-title">
+                    <h2>Design <span>Process</span></h2>
+                    <p>I wanted this project to stand out in design. I knew I wouldn't be able to make something 
+                        as intricate as the popular study apps, but I could make a good UI.
+                        Listening to user feedback, I kept things simple and focused 
+                        only on the essentials, cutting out any unnecessary extras.</p>
+                </div>
+                <div class="design-showcase">
+                    <img src="/components/onyx/onyx-texts.png" alt="" class="onyx-text-img">
+                    <div class="design-prompt consistent">
+                        <h3>Consistent styling</h3>
+                        <p>I chose a purple and pink color <br>
+                            scheme
+                            to create an aesthetic <br>
+                            studying atmosphere for students.</p>
+                    </div>
+                </div>
+                <div class="design-showcase-column scroll-animation">
+                    <div class="design-prompt-column">
+                        <h3>Dark and light mode</h3>
+                        <p>In Figma, I designed every page in a dark and light mode.</p>
+                    </div>
+                    <img src="/components/onyx/darklightmode.JPG" alt="" class="darklightmode">
+                </div>
+                <div class="design-showcase-column scroll-animation">
+                    <div class="design-prompt-column">
+                        <h3>Designing for all screen sizes</h3>
+                        <p>Ensuring that Onyx is compatible for all forms of devices, making learning as accessible as possible.</p>
+                    </div>
+                    <img src="/components/onyx/onyx-mobile.png" alt="" class="mobileimg">
+                    </div>
+                </div>
+                <div class="design-showcase scroll-animation">
+                    <div class="design-title" style="padding-top: 30px;">
+                        <h2>Simplifying the studying process.</h2>
+                        <p>Studying is hard. What makes it worse? Unnecessary features, too much clutter, absurd paywalls (looking at you, Quizlet.)</p>
+                    </div>
+                </div>
+                <div class="design-simplify scroll-animation">
+                    <img src="/components/onyx/onyx-home.png" alt="" class="onyx-home-img">
+                    <div class="design-prompt">
+                        <h2>making the home page feel like <span style="font-style: italic;">home.</span></h2>
+                    </div>
+                </div>
+                <div class="design-simplify scroll-animation">
+                    <div class="design-prompt technical" style="text-align: left;">
+                        <h2>technical when it matters most.</span></h2>
+                    </div>
+                    <img src="/components/onyx/onyx-add.png" alt="" class="onyx-home-img">
+                </div>
+                <div class="design-simplify scroll-animation">
+                    <img src="/components/onyx/onyx-test.png" alt="" class="onyx-home-img">
+                    <div class="design-prompt">
+                        <h2>learn more with spaced repetition.</h2>
+                    </div>
+                </div>
+            </div>
 
+            <div class="line-break scroll-animation"></div>
+
+            <div class="development-container">
+                <div class="development-title scroll-animation">
+                    <h2>Developing <span style="font-style: italic; color: var(--pink-color);">Onyx</span></h2>
+                    <p>After designing the prototype in Figma, I coded the front end using HTML and CSS. Then I set up the MongoDB local database to be connected to my Node.js server using Express.</p>
+                </div>
+                <div class="development-box scroll-animation">
+                    <h3>Implementing the database</h3>
+                    <p>In MongoDB, I created 3 collections, each with their own schema and all connected by user IDs.</p>
+                    <img src="/components/onyx/onyx-db-flowchart.png" alt="" class="onyx-flowchart">
+                </div>
+                <div class="development-box scroll-animation, user-flow-box">
+                    <h3>Handling user authentication</h3>
+                    <p>I used JavaScript to validate a user input, which would then be sent via POST request to the MongoDB local server. The user input would then be checked for if an account has already been made, otherwise the user's new password would be hashed using bycrypt hashing. Upon successful user creation, the server generates a JWT that includes the user's ID with a 1 hour expiration time, which is then stored in local storage to be used to access the user's data such as flashcards and studysets.</p>
+                    <img src="/components/onyx/onyx-user-flow.png" alt="" class="user-flow">
+                </div>
+                <h2 class="final-message">onyx is still a work in progress :)</h2>
+
+            </div>
+
+        <div class="line-break"></div>
+        <footer class="footer-container">
+            <div class="footer-signature">
+                <a href="/index.html">&copy; 2025 Andrew Do</a>
+            </div>
+            <div class="footer-links">
+                <a href="/about.html">about me</a>
+                <a href="https://github.com/andydo4">github</a>
+                <a href="https://www.linkedin.com/in/andrew-do-8a268a268/">linkedin</a>
+                <a href="/components/2025-Andrew-Do-Resume.pdf">resume</a>
+            </div>
+        </footer>
 
     </div>
+
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("in-view");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+    
+        const elements = document.querySelectorAll(".scroll-animation");
+        elements.forEach(element => {
+            observer.observe(element);
+        });
+    });
+    </script>
 </html>

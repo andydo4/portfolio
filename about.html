@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/components/person.svg">
+    <title>Andrew Do</title>
+</head>
+<body>
+    <div class="page-wrapper">
+        <a href="/index.html" class="back-container">
+            <img src="/components/back-arrow.svg" alt="">
+            <p>back</p>
+        </a>
+        <div class="intro-container scroll-animation">
+            <h1>hi!  <span style="color: var(--blue-color)">welcome </span> to my 
+                <span style="color: var(--green-color)">personal </span>
+                <span style="color: var(--orange-color)">corner </span> of the 
+                <span style="color: var(--pink-color)">internet</span></h1>
+            <p>
+                I'm Andrew Do. I like making websites. I am currently a sophomore at the University
+                of Central
+                Florida, pursuing a Bachelor's degree in Computer Science and seeking a 2025
+                internship in 
+                the fields of full-stack development and UX design. 
+            </p>
+            <div class="intro-buttons scroll-animation">
+                <a href="/components/2025-Andrew-Do-Resume.pdf" style="background: var(--blue-color)">resume</a>
+                <a href="https://www.linkedin.com/in/andrew-do-8a268a268/" style="background: var(--green-color)">linkedin</a>
+                <a href="https://github.com/andydo4" style="background: var(--orange-color)">github</a>
+                <a href="mailto:andrewhuudo@gmail.com" style="background: var(--pink-color)">email</a>
+            </div>
+        </div>
+
+        <div class="line-break scroll-animation"></div>
+        
+        <div class="about-container">
+            <div class="design-showcase scroll-animation">
+                <div class="design-title">
+                    <h2>some things I really like</h2>
+                </div>
+            </div>
+            <div class="design-simplify scroll-animation">
+                <img src="/components/about/bills.jpg" alt="" class="onyx-home-img hello">
+                <div class="design-prompt">
+                    <h2 style="color: var(--blue-color)">football</h2>
+                    <p>I have been watching NFL & college football all my life. I am a huge Buffalo Bills & UCF Knights fan.</p>
+                </div>
+            </div>
+            <div class="design-simplify scroll-animation">
+                <div class="design-prompt" style="text-align: left;">
+                    <h2 style="color: var(--f1-color)">formula 1</h2>
+                    <p>#ForzaFerrari</p>
+                </div>
+                <img src="/components/about/f1.jpg" alt="" class="onyx-home-img">
+            </div>
+            <div class="design-simplify scroll-animation">
+                <img src="/components/about/daft.jpg" alt="" class="onyx-home-img hello">
+                <div class="design-prompt">
+                    <h2 style="color: var(--orange-color)">2010s club music</h2>
+                    <p>One of my goals in life is to attend a Calvin Harris and a Coldplay concert.</p>
+                </div>
+            </div>
+            <div class="design-simplify scroll-animation">
+                <div class="design-prompt" style="text-align: left;">
+                    <h2 style="color: var(--green-color)">painterly / comic visuals</h2>
+                    <p>I am often inspired by the comic styled animation of Spiderman: Across the Spiderverse and the painterly + cinematic style of animation in Arcane.</p>
+                </div>
+                <img src="/components/about/arcane.png" alt="" class="onyx-home-img">
+            </div>
+        </div>
+        <div class="line-break scroll-animation"></div>
+            <div class="intro-container scroll-animation" style="margin: 30px 0 30px 0">
+                <h1>Thanks for visiting!</h1>
+            </div>
+        <div class="line-break"></div>
+        <footer class="footer-container">
+            <div class="footer-signature">
+                <a href="/index.html">&copy; 2025 Andrew Do</a>
+            </div>
+            <div class="footer-links">
+                <a href="/about.html">about me</a>
+                <a href="https://github.com/andydo4">github</a>
+                <a href="https://www.linkedin.com/in/andrew-do-8a268a268/">linkedin</a>
+                <a href="/components/2025-Andrew-Do-Resume.pdf">resume</a>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("in-view");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+    
+        const elements = document.querySelectorAll(".scroll-animation");
+        elements.forEach(element => {
+            observer.observe(element);
+        });
+    });
+    </script>
+</html>

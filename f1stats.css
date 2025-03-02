@@ -63,8 +63,8 @@ body, html {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 845px; 
-    margin: 0 auto; 
+    max-width: 845px; /* Optional: Set a max-width for better readability */
+    margin: 0 auto; /* Center the container */
 }
 
 .back-container {
@@ -104,37 +104,38 @@ body, html {
 }
 
 .img-box {
-    background-color: var(--pink-color);
-    position: relative;
+    background-color: var(--f1-color);
     width: 100%;
     height: 413px;
     border-radius: 12px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-.img-onyx {
-    max-width: 75%;
+.img-logo {
+    max-width: 90%;
     max-height: 100%;
     object-fit: cover;
-    transform: translateX(-320px)
-    border-radius: 12px;
     z-index: 1;
+    transform: translateX(415px);
 }
 
 .img-gradient {
-    transform: translateY(-400px);
+    transform: translateX(-257px);
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
-    z-index: 2;
+    z-index: 3;
     user-select: none;
     pointer-events: none;
 }
 
 .hero-container h1 {
     text-align: left;
-    color: var(--pink-color);
+    color: var(--f1-color);
     font-size: 64px;
     font-weight: 700;
     margin-top: 10px;
@@ -214,7 +215,7 @@ body, html {
 }
 
 .line-break {
-    width: 100%;
+    width: 845px;
     height: 1px;
     margin: 25px 0 25px 0;
     background-color: var(--footer-color);
@@ -238,7 +239,6 @@ body, html {
 .body-left-paragraph {
     font-family: 'Instrument Sans';
     padding-top: 0;
-    padding-right: 50px;
     margin-top: 0;
 }
 
@@ -246,11 +246,12 @@ body, html {
     margin-top: 0;
     color: white;
     font-weight: 600;
-    font-size: 40px;
     margin-bottom: 0;
+    padding-right: 80px;
 }
 
 .body-left-paragraph p {
+    padding-right: 50px;
     margin-top: 5px;
     font-size: 16px;
     line-height: 33px;
@@ -259,7 +260,7 @@ body, html {
 
 .key-contributions-container {
     width: 345px;
-    height: 391px;
+    height: 331px;
     background-color: #1B1B1B;
     border-radius: 24px;
     display: flex;
@@ -269,7 +270,7 @@ body, html {
 }
 
 .key-contributions-container h2 {
-    color: var(--pink-color);
+    color: var(--f1-color);
     font-size: 32px;
     font-weight: 600;
     margin-top: 15px;
@@ -283,7 +284,7 @@ body, html {
     margin: 12px auto;
 }
 
-.key-contributions-bold {
+.key-contributions-bold, .key-contributions-container span {
     font-weight: 700;
 }
 
@@ -301,7 +302,6 @@ body, html {
 }
 
 
-
 .research-title h2 {
     margin-top: 0;
     color: white;
@@ -312,7 +312,7 @@ body, html {
 
 .research-title-span {
     font-style: italic;
-    color: var(--pink-color);
+    color: var(--f1-color);
 }
 
 .research-title p {
@@ -343,83 +343,15 @@ body, html {
     line-height: 24px;
 }
 
-.survey-container {
-    margin-top: 30px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 30px;
-    font-family: 'Instrument Sans';
-}
-
-.survey-title {
-    padding-left: 40px;
-}
-
-.survey-title h3 {
-    color: var(--pink-color);
-    font-size: 36px;
-    font-weight: 600px;
-    margin-bottom: 0;
-}
-
-.survey-title p {
-    margin-top: 5px;
-    color: var(--text-color);
-    font-size: 16px;
-    line-height: 33px;
-}
-
-.survey-questions {
-    padding-right: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-}
-
-.survey-q {
-    display: flex;
-    flex-direction: row;
-    background: #1b1b1b;
-    border-radius: 10px;
-    width: 340px;
-    gap: 0px;
-    align-items: center;
-}
-
-
-
-.survey-q p {
-    color: #474747;
-    padding-left: 15px;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.survey-q img {
-    padding-left: 10px;
-}
-
-.findings-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.onyx-survey {
-    width: 100%;
-}
 
 .design-container {
     width: 100%;
     display: flex;
+    font-family: "Instrument Sans";
     flex-direction: column;
 }
 
-.design-title h2, .design-prompt h2 {
+.design-title h2, .design-prompt h2, .design-prompt-left h2 {
     margin-top: 0;
     color: white;
     font-weight: 600;
@@ -427,12 +359,16 @@ body, html {
     margin-bottom: 0;
 }
 
-.design-title span {
-    font-style: italic;
-    color: var(--pink-color);
+.design-prompt h2, .design-prompt-left h2 {
+    color: var(--f1-color);
 }
 
-.design-title p, .design-showcase p, .design-showcase-column p {
+.design-title span {
+    font-style: italic;
+    color: var(--f1-color);
+}
+
+.design-title p, .design-showcase p, .design-showcase-column p, .design-prompt p, .design-prompt-left p {
     color: var(--text-color);
     margin-top: 2;
     font-size: 16px;
@@ -445,6 +381,7 @@ body, html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;e
 }
 
 .design-showcase-column {
@@ -460,23 +397,38 @@ body, html {
     flex-direction: column;
 }
 
+.design-prompt-left {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
 .design-prompt h3 {
-    color: var(--pink-color);
+    color: var(--f1-color);
     font-size: 32px;
     margin-top: 12px;
     margin-bottom: 0;
 }
 
+.design-prompt span {
+    font-weight: 700;
+}
 
 .design-prompt-column h3 {
-    color: var(--pink-color);
+    color: var(--f1-color);
     font-size: 32px;
     margin-bottom: 0px;
 }
 
+.viewers {
+    width: 100%; 
+    border: 0.5px solid var(--footer-color); 
+    border-radius: 22px;
+}
 
-.onyx-text-img {
-    width: 60%;
+
+.f1-text-img {
+    width: 40%;
     height: auto;
     background: #1b1b1b;
     padding: 0 20px 20px;
@@ -486,7 +438,6 @@ body, html {
 
 .darklightmode {
     width: 100%;
-    border-radius: 12px;
 }
 
 .mobileimg {
@@ -497,11 +448,7 @@ body, html {
 .onyx-home-img {
     width: 50%;
     border-radius: 22px;
-}
-
-.onyx-flowchart {
-    width: 100%; 
-    transform: translateY(-60px);
+    border: 0.5px solid var(--footer-color);
 }
 
 .design-simplify {
@@ -553,10 +500,6 @@ body, html {
     border-radius: 22px;
 }
 
-.user-flow-box {
-    transform: translateY(-120px);
-}
-
 .footer-container {
     margin-top: 0px;
     width: 100%;
@@ -576,9 +519,9 @@ body, html {
 .footer-signature a {
     font-family: 'Instrument Sans';
     font-size: 1rem;
-    font-weight: 600;
-    text-decoration: none;
     color: var(--footer-color);
+    text-decoration: none;
+    font-weight: 600;
 }
 
 .footer-links a {
@@ -588,10 +531,6 @@ body, html {
 }
 
 .footer-links a:hover, .footer-signature a:hover {
-    color: white;
-}
-
-.final-message {
     color: white;
 }
 
@@ -617,6 +556,14 @@ body, html {
     transform: translateY(0);
 }
 
+.leyton-house {
+    width: 85%;
+    border-radius: 22px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 @media (max-width: 600px) {
     
     .page-wrapper {
@@ -631,9 +578,8 @@ body, html {
         height: 220px;
     }
 
-    .img-onyx {
+    .img-logo {
         transform: none;
-        transform: translateY(20px);
     }
 
     .img-gradient {
@@ -682,7 +628,6 @@ body, html {
 
     .body-container {
         flex-direction: column;
-        width: 100%:
     }
 
     .body-left-container {
@@ -690,6 +635,10 @@ body, html {
     }
 
     .body-left-paragraph {
+        padding-right: 0;
+    }
+
+    .body-left-paragraph p {
         padding-right: 0;
     }
 
@@ -733,32 +682,53 @@ body, html {
 
     .survey-q {
         width: 100%;
-    }    
+    }   
+
+    .darklightmode, .mobileimg, .viewers, .leyton-house {
+        width: 100%;
+    }
 
     .design-showcase {
         flex-direction: column;
+    }
+
+    .f1-text-img {
+        width: 90%;
+    }
+
+    .design-simplify {
+        flex-direction: column;
+    }
+
+    .onyx-home-img {
+        width: 100%;
+    }
+
+    .devices {
+        margin-bottom: 8px;
     }
 
     .onyx-text-img {
         width: 88%;
     }
 
-    .consistent {
-        margin-top: 15px;
+    .design-prompt {
+        padding: 0;
+        text-align: left;
     }
 
-    .design-prompt h2 {
+    .design-prompt-left {
+        text-align: right;
+        width: 100%;
+    }
+
+    .design-prompt h2, .design-prompt-left h2 {
         font-size: 24px;
-        padding-left: 5px;
     }
 
-    .technical {
-        padding-left: 0;
-        padding-right: 5px;
-    }
-
-    .onyx-flowchart, .user-flow-box {
-        transform: none;
+    .development-container h2 {
+        font-size: 20px;
+        font-weight: 600;
     }
 
     .footer-container {
