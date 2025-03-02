@@ -440,8 +440,9 @@ body, html {
     }
 
     .project-f1-a:hover .project-f1stats-img,
-.project-onyx-a:hover .project-onyx-img {
+    .project-onyx-a:hover .project-onyx-img {
     transform: none;
+    transition: none;
 }
 
 
