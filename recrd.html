@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="f1stats.css">
+    <link rel="stylesheet" href="recrd.css">
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="icon" href="/components/person.svg">
     <title>Andrew Do</title>
@@ -17,32 +17,22 @@
 
         <div class="hero-container scroll-animation">
             <div class="img-box">
-                <img src="/components/f1stats-img.webp" alt="" class="img-logo">
-                <img src="/components/f1/f1-big-gradient.webp" alt="" class="img-gradient">
+                <img src="/components/f1stats-img.png" alt="" class="img-logo">
+                <img src="/components/f1/f1-big-gradient.png" alt="" class="img-gradient">
             </div>
-            <h1>F1Stats</h1>
+            <h1>recrd</h1>
             <div class="hero-info">
-                <p style="text-align: left">Real time Formula 1 data website</p>
+                <p style="text-align: left">Social media app for music enthusiasts</p>
                 <p style="text-align: right">2025</p>
             </div>
             <div class="hero-buttons">
                 <div class="hero-skill-carousel">
-                    <p>JavaScript</p>
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>Node.js</p>
-                    <p>Express</p>
-                    <p>EJS</p>
                     <p>Figma</p>
                 </div>
                 <div class="hero-links">
-                    <a href="https://github.com/andydo4/f1stats">
-                        <img src="/components/github.svg" alt="">
-                        <p>Code</p>
-                    </a>
-                    <a href="https://f1statstracker.vercel.app/">
-                        <img src="/components/earth.svg" alt="">
-                        <p>Website</p>
+                    <a href="https://www.figma.com/proto/dh8HBRbd8kPwBDTnksbmtl/recrd?node-id=68-742&p=f&t=yEVAUuBFVDBoEH2u-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=68%3A742">
+                        <img src="/components/figma.svg" alt="">
+                        <p>Figma</p>
                     </a>
                 </div>
             </div>
@@ -53,14 +43,9 @@
         <div class="body-container">
             <div class="body-left-container scroll-animation">
                 <div class="body-left-paragraph">
-                    <h2 style="font-size: 40px">Overview</h2>
-                    <p>I built a web-based Formula 1 statistics tracker that aggregates
-                        live race data, driver standings, and team results from
-                        1950 to 2025 into one unified platform. By sourcing data
-                        from the <a href="https://api.jolpi.ca/ergast/f1/" style="color: var(--text-color);">Ergast API</a> and presenting it with interactive 
-                        graphs, EJS templating, and responsive CSS, the app 
-                        delivers a streamlined, mobile-optimized experience for
-                        exploring F1 history.
+                    <h2>Overview</h2>
+                    <p>Recrd is a social media app that my teammate <a href="https://seancheema.com/" style="color: var(--text-color);">Sean</a> and I are currently developing. 
+                        Recrd allows users to connect with friends and other music enthusiasts, serving as a platform to rank music albums.
                     </p>
                 </div>
             </div>
@@ -68,11 +53,11 @@
                 <h2>key contributions</h2>
                 <p>designed user interface in <span class="key-contributions-bold">Figma</span></p>
                 <div class="key-contributions-linebreak"></div>
-                <p>developed front end using <span class="key-contributions-bold">HTML, CSS, JavaScript,</span> and <span>EJS</span> templates</p>
+                <p>defined key features</p>
                 <div class="key-contributions-linebreak"></div>
-                <p>utlized <span>Node.js</span> and <span>Express</span> to fetch and process live data from <span>Ergast API</span></p>
+                <p>constructed and prototyped wireframes</p>
                 <div class="key-contributions-linebreak"></div>
-                <p>optimized codebase for mobile with <span>streamlined CSS</span> and <span>responsive design</span></p>
+                <p>Utilized <span>Trello</span> for sorting tasks and future implementations</span></p>
             </div>
         </div>
 
@@ -82,13 +67,15 @@
             
             <div class="design-container scroll-animation">
                 <div class="design-title">
-                    <h2>Design and <span>Development</span></h2>
-                    <p>Since this is a Formula 1 website, I wanted the design to be sleek and modern, capturing 
-                        the fast paced style of F1. 
-                    </p>
+                    <h2>Defining the user experience</h2>
                 </div>
+
+                <video autoplay loop style="width: 845px; border-radius: 30px; margin-top: 30px;">
+                    <source src="/components/recrd/profile-demo.mp4">
+                </video>
+
                 <div class="design-showcase scroll-animation">
-                    <img src="/components/f1/f1-fonts.webp" alt="" class="f1-text-img" loading="lazy">
+                    <img src="/components/f1/f1-fonts.png" alt="" class="f1-text-img">
                     <div class="design-prompt">
                         <h3>Choosing the right fonts</h3>
                         <p>
@@ -101,14 +88,14 @@
                         <h3>Integrating Ergast API</h3>
                         <p>Ergast API is a free, open-source service that offers comprehensive Formula 1 statistics spanning from 1950 to 2024. It provides in-depth data on driver standings, constructor performance, race results, and more.</p>
                     </div>
-                    <img src="/components/f1/f1-flow.png" alt="" class="darklightmode" loading="lazy">
+                    <img src="/components/f1/f1-flow.png" alt="" class="darklightmode">
                 </div>
                 <div class="design-showcase-column scroll-animation" style="margin-top: 0;">
                     <div class="design-prompt-column">
                         <h3>Mobile optimization</h3>
                         <p>Making F1Stats compatible for mobile devices, since mobile viewing is the primary way users access the website.</p>
                     </div>
-                    <img src="/components/f1/f1-mobile.webp" alt="" class="mobileimg" loading="lazy">
+                    <img src="/components/f1/f1-mobile.png" alt="" class="mobileimg">
                     </div>
                 </div>
 
@@ -118,14 +105,14 @@
                     <div class="design-title" style="padding-top: 30px;">
                         <h2>Vercel Analytics</h2>
                         <p>After deploying F1Stats to Vercel, I shared my website on LinkedIn. Within 3 days, it amassed 58 visitors and 107 page views.</p>
-                        <img src="/components/f1/f1-viewers.webp" alt="" class="viewers" loading="lazy">
+                        <img src="/components/f1/f1-viewers.JPG" alt="" class="viewers">
                     </div>
                 </div>
                 <div class="design-simplify scroll-animation">
-                    <img src="/components/f1/f1-devices.JPG" alt="" class="onyx-home-img devices" loading="lazy">
+                    <img src="/components/f1/f1-devices.JPG" alt="" class="onyx-home-img devices">
                     <div class="design-prompt">
                         <h2>All forms of viewing</h2>
-                        <p style="padding-left: 5px;">The majority of viewers are on mobile devices.
+                        <p>The majority of viewers are on mobile devices.
                             This is why I emphasized the mobile design.</p>
                     </div>
                 </div>
@@ -134,7 +121,7 @@
                         <h2>Operating systems</h2>
                         <p>79% of viewers were on iOS devices.</p>
                     </div>
-                    <img src="/components/f1/f1-os.JPG" alt="" class="onyx-home-img os" loading="lazy">
+                    <img src="/components/f1/f1-os.JPG" alt="" class="onyx-home-img os">
                 </div>
             </div>
 
@@ -145,7 +132,7 @@
                     I learned how to fetch and process real-time data from an API and how to optimize my codebase for smaller screens. However,
                     the most meaningful part for me was getting the chance to learn more about Formula 1's history. I also found one of my new favorite F1 cars...
                 </h2>
-                <img src="/components/f1/leyton-house.webp" alt="" class="leyton-house" loading="lazy">
+                <img src="/components/f1/leyton-house.jpg" alt="" class="leyton-house" >
                 <h2 style="color: var(--text-color); font-weight: 400px; margin: 0 auto; font-size: 20px;">1990 Leyton House-Judd CG901</h2>
             </div>
 

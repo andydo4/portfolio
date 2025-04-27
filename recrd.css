@@ -6,7 +6,7 @@
     --background-color: #121212;
     --footer-color: #474747;
     --text-color: #818181;
-    --f1-color: #e8002d;
+    --f1-color: #E7BC10;
     --label-color: #303030;
 
 
@@ -120,9 +120,11 @@ body, html {
     max-height: 100%;
     object-fit: cover;
     z-index: 1;
+    transform: translateX(415px);
 }
 
 .img-gradient {
+    transform: translateX(-257px);
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
@@ -258,7 +260,7 @@ body, html {
 
 .key-contributions-container {
     width: 345px;
-    height: 331px;
+    height: 290px;
     background-color: #1B1B1B;
     border-radius: 24px;
     display: flex;

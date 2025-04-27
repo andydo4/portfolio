@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="/components/person.svg">
-    <title>Andrew Do</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"></noscript>
+      
+        <!-- Inline Critical CSS -->
+        <style>
+          body, html {
+              background-color: #121212;
+              margin: 0;
+              padding: 0;
+              font-family: 'Instrument Sans', sans-serif;
+          }
+          .hero-title h1 {
+              color: white;
+              font-size: 96px;
+              font-weight: 700;
+          }
+          .hero-body h2 {
+              color: #acacac;
+              font-size: 48px;
+              font-weight: 550;
+          }
+        </style>
+      
+        <link rel="stylesheet" href="styles.css">
+
+        <link rel="icon" href="/components/person.svg">
+        <title>Andrew Do</title>
+      </head>
+      
 <body>
     <div class="hero-wrapper">
         <div class="hero-container">
@@ -52,31 +77,60 @@
         <img src="/components/arrow.svg" alt="">
     </div>
 
-    <div class="project-container ">
-        <div class="project-box scroll-animation">
-            <a href="/f1stats.html" class="project-f1-a">            
-                <div class="project-image" style="background-color: var(--f1-color)"> 
-                <img src="/components/f1stats-gradient-img.png" alt="" class="project-f1stats-gradient-img">
-                <img src="/components/f1stats-img.png" alt="" class="project-f1stats-img">
-            </div>
-            <div class="project-label">
-                <h2>F1Stats</h2>
-                <p>Real time f1 data website</p>
-            </div>
-        </a>
-        </div>
-        <div class="project-box scroll-animation">
-            <a href="/onyx.html" class="project-onyx-a">
-                <div class="project-image" style="background-color: var(--pink-color);"> 
-                    <img src="/components/onyx-gradient-img.png" alt="" class="project-onyx-gradient-img">
-                    <img src="/components/onyx-img.png" alt="" class="project-onyx-img">
+    <div class="project-section">
+        <div class="project-container ">
+            <div class="project-box scroll-animation">
+                <a href="/f1stats.html" class="project-f1-a">            
+                    <div class="project-image" style="background-color: var(--f1-color)"> 
+                    <img src="/components/f1stats-gradient-img.webp" alt="" class="project-f1stats-gradient-img">
+                    <img src="/components/f1stats-img.webp" alt="" class="project-f1stats-img">
                 </div>
                 <div class="project-label">
-                    <h2>Onyx</h2>
-                    <p>Study flashcards app</p>
+                    <h2>F1Stats</h2>
+                    <p>Real time f1 data website</p>
                 </div>
             </a>
+            </div>
+            <div class="project-box scroll-animation">
+                <a href="/onyx.html" class="project-onyx-a">
+                    <div class="project-image" style="background-color: var(--pink-color);"> 
+                        <img src="/components/onyx-gradient-img.webp" alt="" class="project-onyx-gradient-img">
+                        <img src="/components/onyx-img.webp" alt="" class="project-onyx-img">
+                    </div>
+                    <div class="project-label">
+                        <h2>Onyx</h2>
+                        <p>Study flashcards app</p>
+                    </div>
+                </a>
+            </div>
         </div>
+
+        <!-- <div class="project-container ">
+            <div class="project-box scroll-animation">
+                <a href="/recrd.html" class="project-f1-a">            
+                    <div class="project-image" style="background-color: var(--recrd-color)"> 
+                    <img src="/components/recrd-gradient-img.png" alt="" class="project-f1stats-gradient-img" style="opacity: 70%;">
+                    <img src="/components/f1stats-img.png" alt="" class="project-f1stats-img">
+                </div>
+                <div class="project-label">
+                    <h2>recrd</h2>
+                    <p>Social media app for music enthusiasts</p>
+                </div>
+            </a>
+            </div>
+            <div class="project-box scroll-animation" style="display: none;">
+                <a href="/onyx.html" class="project-onyx-a">
+                    <div class="project-image" style="background-color: var(--pink-color);"> 
+                        <img src="/components/onyx-gradient-img.png" alt="" class="project-onyx-gradient-img">
+                        <img src="/components/onyx-img.png" alt="" class="project-onyx-img">
+                    </div>
+                    <div class="project-label">
+                        <h2>Onyx</h2>
+                        <p>Study flashcards app</p>
+                    </div>
+                </a>
+            </div>
+        </div> -->
     </div>
 
     <footer class="footer-container">
