@@ -219,12 +219,12 @@ body, html {
     max-width: 90%;
     max-height: 100%;
     object-fit: cover;
-    /* transform: translateX(-280px); */
+    transform: translateX(-280px);
     transition: transform 0.3s ease;
 }
 
 .project-f1stats-gradient-img {
-    /* transform: translateX(303px); */
+    transform: translateX(303px);
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
@@ -234,19 +234,19 @@ body, html {
 }
 
 .project-f1-a:hover .project-f1stats-img {
-    transform: scale(1.05);
+    transform: translateX(-280px) scale(1.05);
 }
 
 .project-onyx-img {
     max-width: 90%;
     max-height: 100%;
     object-fit: cover;
-    /* transform: translateX(-280px); */
+    transform: translateX(-280px);
     transition: transform 0.3s ease;
 }
 
 .project-onyx-gradient-img {
-    /* transform: translateX(253px); */
+    transform: translateX(253px);
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
@@ -256,7 +256,7 @@ body, html {
 }
 
 .project-onyx-a:hover .project-onyx-img {
-    transform: scale(1.05);
+    transform: translateX(-280px) scale(1.05);
 }
 
 .footer-container {
@@ -430,16 +430,16 @@ body, html {
 
     .project-f1stats-img {
         width: 85%;
-        /* transform: translateX(-170px); */
+        transform: translateX(-170px);
     }
 
     .project-f1stats-gradient-img {
-        /* transform: translateX(165px); */
+        transform: translateX(165px);
     }
 
     .project-onyx-img {
         width: 95%;
-        /* transform: translateX(-170px); */
+        transform: translateX(-170px);
     }
 
     .footer-container {
@@ -453,7 +453,7 @@ body, html {
 
     .project-f1-a:hover .project-f1stats-img,
     .project-onyx-a:hover .project-onyx-img {
-    transform: none;
+    transform: translateX(-170px);
     transition: none;
 }
 
