@@ -105,16 +105,20 @@
             </div>
         </div>
 
-        <!-- <div class="project-container ">
+        <div class="project-container ">
             <div class="project-box scroll-animation">
-                <a href="/recrd.html" class="project-f1-a">            
-                    <div class="project-image" style="background-color: var(--recrd-color)"> 
-                    <img src="/components/recrd-gradient-img.png" alt="" class="project-f1stats-gradient-img" style="opacity: 70%;">
-                    <img src="/components/f1stats-img.png" alt="" class="project-f1stats-img">
+                <a href="/prod.html" class="project-prod-a">            
+                    <div class="project-image" style="background-color: var(--prod-color)"> 
+                    <video autoplay loop muted playsinline class="project-prod-video">
+                        <source src="/components/prod/prod-hero.mp4" type="video/mp4"/>
+                        Your browser does not support the video tag.
+                    </video>
+                    <img src="/components/prod-gradient-img.png" alt="" class="project-prod-gradient-img">
+                    <!-- <img src="/components/f1stats-img.png" alt="" class="project-f1stats-img"> -->
                 </div>
                 <div class="project-label">
-                    <h2>recrd</h2>
-                    <p>Social media app for music enthusiasts</p>
+                    <h2>Prodisphere</h2>
+                    <p>Sports valuation startup</p>
                 </div>
             </a>
             </div>
@@ -130,7 +134,7 @@
                     </div>
                 </a>
             </div>
-        </div> -->
+        </div>
     </div>
 
     <footer class="footer-container">
@@ -138,6 +142,7 @@
             <a href="/index.html">&copy; 2025 Andrew Do</a>
         </div>
         <div class="footer-links">
+            <a href="">back to top</a>
             <a href="/about.html">about me</a>
             <a href="https://github.com/andydo4">github</a>
             <a href="https://www.linkedin.com/in/andrew-do-8a268a268/">linkedin</a>
@@ -160,6 +165,16 @@
         elements.forEach(element => {
             observer.observe(element);
         });
+    });
+    </script>
+    <script>
+            document.querySelectorAll('.footer-links a').forEach(link => {
+        if (link.textContent.trim().toLowerCase() === 'back to top') {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
     });
     </script>
 </html>

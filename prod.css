@@ -1,0 +1,893 @@
+:root {
+    --pink-color: #b948d8;
+    --orange-color: #f25a2c;
+    --green-color: #0f6753;
+    --blue-color: #1e4bae;
+    --background-color: #121212;
+    --footer-color: #474747;
+    --text-color: #818181;
+    --f1-color: #00A896;
+    --label-color: #303030;
+
+
+    --old-color: #D9D9D9;
+    --oldaccent-color: #C9B5B2;
+}
+
+/* Styles for the image modal */
+.image-modal-overlay {
+    position: fixed; /* Sit on top of the page content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    z-index: 1000; /* Specify a stack order in case you have other z-index values */
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Show a pointer hand indicating the overlay can be clicked to close */
+}
+
+.image-modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    display: block; /* Make it a block element */
+    margin: auto; /* Auto margins for centering */
+}
+
+/* Optional: Add a close button */
+.image-modal-close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.image-modal-close:hover,
+.image-modal-close:focus {
+    color: #bbb;
+    text-decoration: none;
+}
+
+/* For Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #121212; /* Color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue-color); /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Roundness of the thumb */
+    border: 3px solid #121212; /* Creates padding around the thumb */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: auto; /* "auto" or "thin" */
+    scrollbar-color: var(--footer-color) #121212; /* thumb and track color */
+}
+
+
+// <weight>: Use a value from 400 to 700
+// <uniquifier>: Use a unique and descriptive class name
+
+.instrument-sans-<uniquifier> {
+    font-family: "Instrument Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+
+body, html {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 845px; /* Optional: Set a max-width for better readability */
+    margin: 0 auto; /* Center the container */
+}
+
+.project-prod-video {
+    max-width: 65%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
+    border-radius: 0;
+}
+
+
+.back-container {
+    margin-bottom: 7px;
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    height: 30px;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.back-container {
+    transition: transform 0.3s ease;
+}
+
+.back-container:hover {
+    transform: translateY(0) scale(1.1);
+}
+
+.back-container p {
+    font-family: 'Instrument Sans';
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.back-container img {
+    max-height: 24px;
+}
+
+.hero-container {
+    width: 100%;
+    text-align: center;
+    font-family: 'Instrument Sans';
+}
+
+.img-box {
+    background-color: var(--f1-color);
+    width: 100%;
+    height: 413px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.img-logo {
+    max-width: 90%;
+    max-height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.img-gradient {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    z-index: 3;
+    user-select: none;
+    pointer-events: none;
+}
+
+.hero-container h1 {
+    text-align: left;
+    color: var(--f1-color);
+    font-size: 64px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.hero-info {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 22px;
+    margin-bottom: 10px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hero-skill-carousel {
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-skill-carousel p {
+    font-family: "Instrument Sans";
+    color: rgb(255, 255, 255);
+    background-color: rgb(41, 41, 41);
+    border: 1px solid var(--footer-color);
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+    height: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-links a {
+    background-color: rgb(41, 41, 41);
+    border: 1px solid var(--footer-color);
+    display: flex;
+    flex-direction: row;
+    font-family: "Instrument Sans";
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    height: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin: 5px;
+    transition: transform 0.3s ease;
+}
+
+.hero-links a:hover {
+    transform: scale(1.2);
+}
+
+.hero-links img {
+    width: 15px;
+}
+
+.line-break {
+    width: 845px;
+    height: 1px;
+    margin: 25px 0 25px 0;
+    background-color: var(--footer-color);
+}
+
+.body-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.body-left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 0;
+    padding-top: 0;
+    width: 550px;
+}
+
+.body-left-paragraph {
+    font-family: 'Instrument Sans';
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.body-left-paragraph h2 {
+    margin-top: 0;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding-right: 80px;
+}
+
+.body-left-paragraph p {
+    padding-right: 50px;
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 33px;
+    color: var(--text-color);
+}
+
+.key-contributions-container {
+    width: 345px;
+    height: 536px;
+    background-color: #1B1B1B;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Instrument Sans';
+}
+
+.key-contributions-container h2 {
+    color: var(--f1-color);
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.key-contributions-container p {
+    color: var(--text-color);
+    width: 285px;
+    text-align: left;
+    margin: 12px auto;
+}
+
+.key-contributions-bold, .key-contributions-container span {
+    font-weight: 700;
+}
+
+.key-contributions-linebreak {
+    width: 285px;
+    height: 1px;
+    background: #2e2e2e;
+    margin: 0 auto;
+}
+
+.research-container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Instrument Sans';
+}
+
+
+.research-title h2 {
+    margin-top: 0;
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.research-title-span {
+    font-style: italic;
+    color: var(--f1-color);
+}
+
+.research-title p {
+    color: var(--text-color);
+    margin-top: 5;
+    font-size: 16px;
+    line-height: 33px;
+}
+
+.research-features {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.research-features h4 {
+    margin-top: 5px;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.research-features p {
+    margin-top: 2px;
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.video-caption {
+    text-align: center;
+}
+
+.survey-container {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    font-family: 'Instrument Sans';
+}
+
+.survey-title {
+}
+
+.survey-title h3 {
+    color: var(--f1-color);
+    font-size: 32px;
+    font-weight: 600px;
+    margin-bottom: 0;
+}
+
+.survey-title p {
+    margin-top: 5px;
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 33px;
+}
+
+.survey-questions {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.survey-q {
+    display: flex;
+    flex-direction: row;
+    background: #1b1b1b;
+    border-radius: 10px;
+    width: 340px;
+    gap: 0px;
+    align-items: center;
+}
+
+
+
+.survey-q p {
+    color: #474747;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 10px 0 10px;
+}
+
+
+.design-container {
+    width: 100%;
+    display: flex;
+    font-family: "Instrument Sans";
+    flex-direction: column;
+}
+
+
+.design-title h2 {
+    margin-top: 0;
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.design-prompt h2, .design-prompt-left h2 {
+    color: var(--f1-color);
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.design-title span {
+    font-style: italic;
+    color: var(--f1-color);
+}
+
+.design-title p, .design-showcase p, .design-showcase-column p, .design-prompt p, .design-prompt-left p {
+    color: var(--text-color);
+    margin-top: 2;
+    font-size: 16px;
+    line-height: 33px;
+}
+
+.design-showcase {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;e
+}
+
+.design-showcase-column {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.design-prompt {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.design-prompt-left {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.design-prompt h3, .design-prompt-left h3 {
+    color: var(--f1-color);
+    font-size: 32px;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+.design-prompt span {
+    font-weight: 700;
+}
+
+.design-prompt-column h3 {
+    color: var(--f1-color);
+    font-size: 32px;
+    margin-bottom: 0px;
+}
+
+.viewers {
+    width: 100%; 
+    border: 0.5px solid var(--footer-color); 
+    border-radius: 22px;
+}
+
+
+.f1-text-img {
+    width: 40%;
+    height: auto;
+    background: #1b1b1b;
+    padding: 0 20px 20px;
+    border-radius: 22px;
+
+}
+
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+  border-radius: 22px;
+}
+
+.darklightmode {
+    width: 100%;
+}
+
+.mobileimg {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.onyx-home-img {
+    width: 50%;
+    border-radius: 22px;
+    border: 0.5px solid var(--footer-color);
+}
+
+.design-simplify {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.development-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Instrument Sans";
+}
+
+.development-box {
+    margin-top: 30px;
+    width: 100%;
+    gap: 0;
+    margin-bottom: 0;
+}
+
+.development-title h2 {
+    margin-top: 0;
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.development-title p, .development-box p, .development-container p {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 33px;
+}
+
+.development-box h3 {
+    color: var(--pink-color);
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.user-flow {
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 22px;
+}
+
+.footer-container {
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.footer-signature a {
+    font-family: 'Instrument Sans';
+    font-size: 1rem;
+    color: var(--footer-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-links a {
+    font-family: 'Instrument Sans';
+    color: var(--footer-color);
+    text-decoration: none;
+}
+
+.footer-links a:hover, .footer-signature a:hover {
+    color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.scroll-animation.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.leyton-house {
+    width: 85%;
+    border-radius: 22px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.development-container h2 {
+    font-size: 40px;
+    color: white;
+}
+
+.prod-left {
+    margin-right: 50px;
+}
+
+.prod-right {
+    margin-left: 50px;
+}
+
+@media (max-width: 600px) {
+    
+    .prod-left, .prod-right {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .page-wrapper {
+        width: 90%;
+    }
+
+    .line-break {
+        width: 100%;
+    }
+
+    .img-box {
+        height: 220px;
+    }
+
+    .img-logo {
+        transform: none;
+    }
+
+    .img-gradient {
+        display: none;
+    }
+
+    .hero-container h1 {
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .hero-info {
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 10px;
+        height: auto;
+    }
+
+    .hero-info p {
+        margin: 0;
+        text-align: left;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-skill-carousel {
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-skill-carousel p {
+        font-size: 10px;
+        padding: 2px 4px;
+    }
+
+    .hero-links {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .body-container {
+        flex-direction: column;
+    }
+
+    .body-left-container {
+        width: 100%;
+    }
+
+    .body-left-paragraph {
+        padding-right: 0;
+        padding-bottom: 25px;
+    }
+
+    .body-left-paragraph p {
+        padding-right: 0;
+    }
+
+    .key-contributions-container {
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .key-contributions-linebreak {
+        width: 75%;
+    }
+
+    .research-container {
+        width: 100%;
+    }
+
+    .research-features {
+        flex-direction: column;
+    }
+
+    .onyx-survey {
+        margin-bottom: 20px;
+    }
+
+    .research-img {
+        width: 100%;
+    }
+
+    .survey-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .survey-title {
+        padding-left: 0;
+    }
+
+    .survey-questions {
+        padding-right: 0;
+    }
+
+    .survey-q {
+        width: 100%;
+    }   
+
+    .darklightmode, .mobileimg, .viewers, .leyton-house {
+        width: 100%;
+    }
+
+    .design-showcase {
+        flex-direction: column;
+    }
+
+    .f1-text-img {
+        width: 90%;
+    }
+
+    .design-simplify {
+        flex-direction: column;
+    }
+
+    .onyx-home-img {
+        width: 100%;
+    }
+
+    .devices {
+        margin-bottom: 8px;
+    }
+
+    .onyx-text-img {
+        width: 88%;
+    }
+
+    .design-prompt {
+        padding: 0;
+        text-align: left;
+    }
+
+    .design-prompt-left {
+        text-align: right;
+        width: 100%;
+    }
+
+    .design-prompt h2, .design-prompt-left h2 {
+        font-size: 24px;
+    }
+
+    .design-prompt h2, .design-prompt-left h2 {
+        padding-top: 10px;
+    }
+
+    .left {
+        flex-direction: column-reverse;
+    }
+
+    .development-container h2 {
+        font-weight: 600;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .footer-signature a {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+}

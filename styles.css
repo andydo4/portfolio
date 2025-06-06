@@ -8,6 +8,7 @@
     --text-color:rgb(172, 172, 172);
     --text2-color: #818181;
 
+    --prod-color: #00A896;
     --recrd-color: #E7BC10;
     --f1-color: #e8002d;
     --label-color: #303030;
@@ -65,7 +66,7 @@ body, html {
 .hero-wrapper {
     /// background-color: red;
     transform: translateX(30px);
-    margin-top: 65%;
+    margin-top: 110%;
     position: relative;
     width: 100%;
     height: 100vh;
@@ -223,6 +224,27 @@ body, html {
     transition: transform 0.3s ease;
 }
 
+.project-prod-video {
+    max-width: 85%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    transform: translateX(250px);
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
+}
+
+.project-prod-gradient-img {
+    max-width: 90%;
+    max-height: 100%;
+    object-fit: cover;
+    transform: translateX(-240px);
+    transition: transform 0.3s ease;
+}
+
+.project-prod-a:hover .project-prod-video {
+    transform: translateX(250px) scale(1.05);
+}
+
 .project-f1stats-gradient-img {
     transform: translateX(303px);
     max-width: 100%;
@@ -337,6 +359,10 @@ body, html {
         transform: none;
     }
 
+    .hero-container {
+        margin-top: -200px;
+    }
+
     .hero-title, .hero-body, .hero-box, .hero-a-list {
         align-items: center;
         justify-content: center;
@@ -437,6 +463,14 @@ body, html {
         transform: translateX(165px);
     }
 
+    .project-prod-video {
+        transform: translateX(175px);
+    }
+
+    .project-prod-gradient-img {
+        transform: translateX(-165px);
+    }
+
     .project-onyx-img {
         width: 95%;
         transform: translateX(-170px);
@@ -449,6 +483,11 @@ body, html {
     .footer-signature a {
         margin-bottom: 5px;
         transform: none;
+    }
+
+    .project-prod-a:hover .project-prod-video {
+        transform: translateX(175px);
+        transition: none;
     }
 
     .project-f1-a:hover .project-f1stats-img,

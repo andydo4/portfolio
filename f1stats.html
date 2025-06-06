@@ -60,9 +60,10 @@
                         from the <a href="https://api.jolpi.ca/ergast/f1/" style="color: var(--text-color);">Ergast API</a> and presenting it with interactive 
                         graphs, EJS templating, and responsive CSS, the app 
                         delivers a streamlined, mobile-optimized experience for
-                        exploring F1 history.
+                        exploring F1 history. <br><br>This was a passion project of mine that allowed me to combine my love for Formula 1 with my programming skills. It taught me about API handling and optimizing performance. 
                     </p>
                 </div>
+
             </div>
             <div class="key-contributions-container scroll-animation">
                 <h2>key contributions</h2>
@@ -72,7 +73,9 @@
                 <div class="key-contributions-linebreak"></div>
                 <p>utlized <span>Node.js</span> and <span>Express</span> to fetch and process live data from <span>Ergast API</span></p>
                 <div class="key-contributions-linebreak"></div>
-                <p>optimized codebase for mobile with <span>streamlined CSS</span> and <span>responsive design</span></p>
+                <p>optimized load times (~0.9s FCP, ~0.9s Speed Index), benchmarked with Lighthouse</p>
+                <div class="key-contributions-linebreak"></div>
+                <p>boosted backend throughput by ~2% via GZIP compression, JavaScript bundling, & deferred loading, verified by Autocannon</p>
             </div>
         </div>
 
@@ -83,8 +86,8 @@
             <div class="design-container scroll-animation">
                 <div class="design-title">
                     <h2>Design and <span>Development</span></h2>
-                    <p>Since this is a Formula 1 website, I wanted the design to be sleek and modern, capturing 
-                        the fast paced style of F1. 
+                    <p>The design goal for F1Stats was to create a sleek, modern user interface that mirrors the high-tech, 
+                        fast-paced aesthetic of Formula 1.
                     </p>
                 </div>
                 <div class="design-showcase scroll-animation">
@@ -92,8 +95,7 @@
                     <div class="design-prompt">
                         <h3>Choosing the right fonts</h3>
                         <p>
-                        I wanted to select fonts similar to the ones <br>
-                    used in official F1 posts.</p>
+                        To ensure the design felt authentic, I selected fonts that are similar to the style used in official F1 branding.</p>
                     </div>
                 </div>
                 <div class="design-showcase-column scroll-animation">
@@ -106,7 +108,7 @@
                 <div class="design-showcase-column scroll-animation" style="margin-top: 0;">
                     <div class="design-prompt-column">
                         <h3>Mobile optimization</h3>
-                        <p>Making F1Stats compatible for mobile devices, since mobile viewing is the primary way users access the website.</p>
+                        <p>Recognizing that many users would access the site on the go, I prioritized a responsive, mobile-first design approach from the start.</p>
                     </div>
                     <img src="/components/f1/f1-mobile.webp" alt="" class="mobileimg" loading="lazy">
                     </div>
@@ -125,16 +127,52 @@
                     <img src="/components/f1/f1-devices.JPG" alt="" class="onyx-home-img devices" loading="lazy">
                     <div class="design-prompt">
                         <h2>All forms of viewing</h2>
-                        <p style="padding-left: 5px;">The majority of viewers are on mobile devices.
-                            This is why I emphasized the mobile design.</p>
+                        <p style="padding-left: 5px;">Post-launch analytics confirmed that a majority of visitors were on mobile devices, reinforcing the importance of an optimized experience on smaller screens.</p>
                     </div>
                 </div>
-                <div class="design-simplify scroll-animation">
+                <div class="design-simplify left scroll-animation">
                     <div class="design-prompt-left">
                         <h2>Operating systems</h2>
                         <p>79% of viewers were on iOS devices.</p>
                     </div>
                     <img src="/components/f1/f1-os.JPG" alt="" class="onyx-home-img os" loading="lazy">
+                </div>
+            </div>
+
+            <div class="line-break scroll-animation"></div>
+            
+            <div class="research-container">
+                <div class="design-container scroll-animation">
+                    <div class="design-title">
+                        <h2>Performance <span>Optimization</span></h2>
+                        <p>When building F1Stats, I wanted not only a responsive user interface, but also a highly optimized backend to deliver data as quickly as possible. To achieve this, 
+                            I implemented several performance improvements and measured their real-world impact through benchmarking tools.</p>
+                    </div>
+                    <div class="design-simplify scroll-animation">
+                        <img src="/components/f1/f1-compression.png" alt="" class="onyx-home-img" loading="lazy">
+                        <div class="design-prompt">
+                            <h3>GZIP compression</h3>
+                            <p>To reduce server response size and accelerate delivery, I implemented GZIP compression to my files, which minimized bandwidth usage.</p>
+                        </div>
+                    </div>
+                    <div class="design-showcase-column scroll-animation">
+                        <div class="design-prompt-column">
+                            <h3>JS bundling & deferred loading</h3>
+                            <p>I bundled 2 JavaScript files using esbuild, reducing them into a single, minified file, cutting down the number of server requests. I also 
+                                deferred non-critical JavaScript, which helped avoid blocking the initial browser paint and allowed the site to feel fast before all scripts finished loading.
+                            </p>
+                        </div>
+                        <img src="/components/f1/f1-bundle.png" alt="" class="mobileimg" loading="lazy">
+                    </div>
+                    <div class="design-showcase-column scroll-animation">
+                        <div class="design-title" style="margin-top: 30px;">
+                            <h2>Benchmarking Metrics</h2>
+                            <p>I used Lighthouse to benchmark performance. Even before optimization, my code was already well-structured, so the scores were already strong. Still, I fine-tuned what I could. After implementing GZIP compression, bundling JavaScript, 
+                                and deferring non-essential scripts, I achieved ~0.9s for both FCP and Speed Index. The gains were minimal, but it was a satisfying confirmation that the 
+                                foundation I built was already fast.</p>
+                                <img src="/components/f1/f1-optimize.JPG" alt="" class="mobileimg" loading="lazy">
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -155,6 +193,7 @@
                 <a href="/index.html">&copy; 2025 Andrew Do</a>
             </div>
             <div class="footer-links">
+                <a href="">back to top</a>
                 <a href="/about.html">about me</a>
                 <a href="https://github.com/andydo4">github</a>
                 <a href="https://www.linkedin.com/in/andrew-do-8a268a268/">linkedin</a>
@@ -165,6 +204,10 @@
             </div>
         </div>
     </div>
+        <div id="myImageModal" class="image-modal-overlay">
+  <span class="image-modal-close">&times;</span>
+  <img class="image-modal-content" id="img01">
+</div>
 </body>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -181,6 +224,72 @@
         elements.forEach(element => {
             observer.observe(element);
         });
+    });
+    </script>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    // --- Your existing scroll animation code is here ---
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("in-view");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    const elements = document.querySelectorAll(".scroll-animation");
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+
+    // --- New code for the image modal ---
+
+    // Get the modal elements
+    const modal = document.getElementById("myImageModal");
+    const modalImg = document.getElementById("img01");
+    const closeBtn = document.querySelector(".image-modal-close");
+
+    // Get all images within the main page wrapper that you want to be clickable
+    const images = document.querySelectorAll('.page-wrapper img');
+
+    images.forEach(img => {
+        // Exclude very small images like icons if they exist
+        if (img.width < 50 || img.classList.contains('person')) {
+            return;
+        }
+
+        img.style.cursor = 'zoom-in'; // Add a zoom-in cursor to clickable images
+        img.onclick = function() {
+            modal.style.display = "flex"; // Use flex to take advantage of justify/align
+            modalImg.src = this.src;
+        }
+    });
+
+    // Function to close the modal
+    const closeModal = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks on <span> (x) or the overlay, close the modal
+    closeBtn.onclick = closeModal;
+    modal.onclick = function(event) {
+        // Only close if the click is on the overlay itself, not the image
+        if (event.target === modal) {
+            closeModal();
+        }
+    }
+});
+    </script>
+    <script>
+            document.querySelectorAll('.footer-links a').forEach(link => {
+        if (link.textContent.trim().toLowerCase() === 'back to top') {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
     });
     </script>
 </html>

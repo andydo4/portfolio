@@ -456,8 +456,16 @@ body, html {
         flex-direction: column;
     }
 
+    .left {
+        flex-direction: column-reverse;
+    }
+
+    .left h2 {
+        margin-top: 10px;
+    }
+
     .line-break {
-        width: 90%;
+        width: 100%;
     }
 
     .footer-container {

@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  },
+  "name": "portfolionew",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andydo4/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andydo4/portfolio/issues"
+  },
+  "homepage": "https://github.com/andydo4/portfolio#readme",
+  "description": ""
+}

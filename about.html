@@ -20,7 +20,11 @@
                 <span style="color: var(--orange-color)">corner </span> of the 
                 <span style="color: var(--pink-color)">internet</span></h1>
             <p>
-                My name is Andrew Do and I'm a computer science student at the University of Central Florida with a focus on full-stack development, UX/UI design, and product design.
+                My name is Andrew Do and I'm a computer science student at the University of Central Florida with a focus on full-stack development, UX/UI design, and product design. 
+                Currently, I am a full-stack developer intern at Prodisphere and a web design intern at Limbitless Solutions. In my free time, if I am not working on personal projects, 
+                I am hanging out with my friends (I love to play pool and watch sports!)
+                <br><br>
+                What sets me apart is my ability to think from both a developer's and user's perspective. I care about building products that work and are intuitive to use.
             </p>
             <div class="intro-buttons scroll-animation">
                 <a href="/components/2025-Andrew-Do-Resume.pdf" style="background: var(--blue-color)">resume</a>
@@ -45,7 +49,7 @@
                     <p>I have been watching NFL & college football all my life. I am a huge Buffalo Bills & UCF Knights fan.</p>
                 </div>
             </div>
-            <div class="design-simplify scroll-animation">
+            <div class="design-simplify left scroll-animation">
                 <div class="design-prompt" style="text-align: left;">
                     <h2 style="color: var(--f1-color)">formula 1</h2>
                     <p>#ForzaFerrari</p>
@@ -59,7 +63,7 @@
                     <p>One of my goals in life is to attend a Calvin Harris and a Coldplay concert.</p>
                 </div>
             </div>
-            <div class="design-simplify scroll-animation">
+            <div class="design-simplify left scroll-animation">
                 <div class="design-prompt" style="text-align: left;">
                     <h2 style="color: var(--green-color)">painterly / comic visuals</h2>
                     <p>I am often inspired by the comic styled animation of Spiderman: Across the Spiderverse and the painterly + cinematic style of animation in Arcane.</p>
@@ -77,6 +81,7 @@
                 <a href="/index.html">&copy; 2025 Andrew Do</a>
             </div>
             <div class="footer-links">
+                <a href="">back to top</a>
                 <a href="/about.html">about me</a>
                 <a href="https://github.com/andydo4">github</a>
                 <a href="https://www.linkedin.com/in/andrew-do-8a268a268/">linkedin</a>
@@ -102,6 +107,16 @@
         elements.forEach(element => {
             observer.observe(element);
         });
+    });
+    </script>
+    <script>
+            document.querySelectorAll('.footer-links a').forEach(link => {
+        if (link.textContent.trim().toLowerCase() === 'back to top') {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
     });
     </script>
 </html>

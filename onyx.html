@@ -225,6 +225,7 @@
                 <a href="/index.html">&copy; 2025 Andrew Do</a>
             </div>
             <div class="footer-links">
+                <a href="">back to top</a>
                 <a href="/about.html">about me</a>
                 <a href="https://github.com/andydo4">github</a>
                 <a href="https://www.linkedin.com/in/andrew-do-8a268a268/">linkedin</a>
@@ -233,7 +234,10 @@
         </footer>
 
     </div>
-
+    <div id="myImageModal" class="image-modal-overlay">
+  <span class="image-modal-close">&times;</span>
+  <img class="image-modal-content" id="img01">
+</div>
 </body>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -250,6 +254,72 @@
         elements.forEach(element => {
             observer.observe(element);
         });
+    });
+    </script>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    // --- Your existing scroll animation code is here ---
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("in-view");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    const elements = document.querySelectorAll(".scroll-animation");
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+
+    // --- New code for the image modal ---
+
+    // Get the modal elements
+    const modal = document.getElementById("myImageModal");
+    const modalImg = document.getElementById("img01");
+    const closeBtn = document.querySelector(".image-modal-close");
+
+    // Get all images within the main page wrapper that you want to be clickable
+    const images = document.querySelectorAll('.page-wrapper img');
+
+    images.forEach(img => {
+        // Exclude very small images like icons if they exist
+        if (img.width < 50 || img.classList.contains('person')) {
+            return;
+        }
+
+        img.style.cursor = 'zoom-in'; // Add a zoom-in cursor to clickable images
+        img.onclick = function() {
+            modal.style.display = "flex"; // Use flex to take advantage of justify/align
+            modalImg.src = this.src;
+        }
+    });
+
+    // Function to close the modal
+    const closeModal = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks on <span> (x) or the overlay, close the modal
+    closeBtn.onclick = closeModal;
+    modal.onclick = function(event) {
+        // Only close if the click is on the overlay itself, not the image
+        if (event.target === modal) {
+            closeModal();
+        }
+    }
+});
+    </script>
+    <script>
+            document.querySelectorAll('.footer-links a').forEach(link => {
+        if (link.textContent.trim().toLowerCase() === 'back to top') {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
     });
     </script>
 </html>
