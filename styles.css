@@ -205,7 +205,7 @@ body, html {
     padding-left: 10px;
 }
 
-.project-f1-a, .project-onyx-a {
+.project-f1-a, .project-onyx-a, .project-prod-a {
     text-decoration: none;
 }
 
@@ -486,7 +486,6 @@ body, html {
     }
 
     .project-prod-a:hover .project-prod-video {
-        transform: translateX(175px);
         transition: none;
     }
 
