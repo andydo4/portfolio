@@ -1,26 +1,46 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --pink-color: #b948d8;
+  --orange-color: #f25a2c;
+  --green-color: #0f6753;
+  --lime-color: #31bf42;
+  --blue-color: #1e4bae;
+  --background-color: #121212;
+  --footer-color: #474747;
+  --text-color: rgb(172, 172, 172);
+  --text2-color: #818181;
+  --prod-color: #00a896;
+  --recrd-color: #e7bc10;
+  --f1-color: #e8002d;
+  --label-color: #303030;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 12px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue-color);
+  border-radius: 6px;
+  border: 3px solid #121212;
+}
+
+* {
+  scrollbar-width: auto;
+  scrollbar-color: var(--footer-color) #121212;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  font-family: "Instrument Sans", sans-serif;
 }
+
+/* Scroll animation styles - handled by component state now */
