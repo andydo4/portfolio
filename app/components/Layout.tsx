@@ -26,7 +26,7 @@ export default function Layout({ children }: LayoutProps) {
       >
         <div className="text-[#474747] text-base font-semibold">
           <Link href="/" className="hover:text-white transition-colors">
-            &copy; 2025 Andrew Do
+            &copy; {new Date().getFullYear()} Andrew Do
           </Link>
         </div>
         <div className="flex flex-col md:flex-row gap-2.5 md:gap-10 text-center md:text-left">
@@ -65,7 +65,7 @@ export default function Layout({ children }: LayoutProps) {
             linkedin
           </a>
           <a
-            href="/2025-Andrew-Do-Resume.pdf"
+            href="/2026-Andrew-Do-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#474747] hover:text-white transition-colors font-['Instrument_Sans'] text-base"

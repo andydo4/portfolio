@@ -89,7 +89,7 @@ export default function Home() {
             </div>
             <div className="pl-0 md:pl-2.5 justify-center md:justify-start text-xl md:text-2xl font-normal mt-0.5 flex gap-12.5 md:gap-[114px]">
               <a
-                href="/2025-Andrew-Do-Resume.pdf"
+                href="/2026-Andrew-Do-Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#acacac] no-underline hover:text-white"
@@ -159,21 +159,21 @@ export default function Home() {
 
             <ScrollAnimation className="flex flex-col w-[90%] md:w-full">
               <Link href="/recrd" className="no-underline group">
-                <div className="w-full md:w-[560px] h-[275px] md:h-[450px] overflow-hidden flex justify-center items-center bg-[#E7BC10]">
-                  <Image
-                    src="/recrd/recrd-big-img.jpg"
-                    alt=""
-                    className="max-w-[80%] md:max-w-[80%] max-h-full object-cover translate-x-[173px] md:translate-x-[250px] w-[95%] md:w-auto transition-transform duration-300 ease group-hover:scale-105"
-                    width={1442}
-                    height={904}
-                  />
-                  <Image
-                    src="/recrd/recrd-big-gradient.webp"
-                    alt=""
-                    className="max-w-[90%] md:max-w-[90%] max-h-full object-cover translate-y-[30px] md:translate-y-[70px] -translate-x-[175px] md:-translate-x-[225px] w-[95%] md:w-auto transition-transform duration-300 ease group-hover:scale-105"
-                    width={1920}
-                    height={1080}
-                  />
+                <div className="w-full md:w-[560px] h-[275px] md:h-[450px] overflow-hidden bg-[#E7BC10] relative flex justify-center items-center">
+                  <div className="relative w-[80%] h-[80%]">
+                    <Image
+                      src="/recrd/recrd-big-img.jpg"
+                      alt=""
+                      fill
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease group-hover:scale-105"
+                    />
+                    <Image
+                      src="/recrd/recrd-big-gradient.webp"
+                      alt=""
+                      fill
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease group-hover:scale-105"
+                    />
+                  </div>
                 </div>
                 <div className="bg-[#303030] w-full md:w-[560px] h-[44px] flex flex-row items-center justify-between no-underline">
                   <h2 className="font-['Instrument_Sans'] font-bold text-2xl text-white pl-2.5">
@@ -189,21 +189,21 @@ export default function Home() {
           <div className="flex flex-col md:flex-row gap-[50px] w-full items-center md:items-start">
             <ScrollAnimation className="flex flex-col w-[90%] md:w-full">
               <Link href="/f1stats" className="no-underline group">
-                <div className="w-full md:w-[560px] h-[275px] md:h-[450px] overflow-hidden flex justify-center items-center bg-[#e8002d]">
-                  <Image
-                    src="/f1stats-gradient-img.png"
-                    alt=""
-                    className="max-w-full max-h-full object-cover translate-x-[165px] md:translate-x-[250px] z-[3] scale-200 select-none pointer-events-none"
-                    width={560}
-                    height={450}
-                  />
-                  <Image
-                    src="/f1stats-img.webp"
-                    alt=""
-                    className="max-w-[90%] md:max-w-[90%] max-h-full object-cover -translate-x-[140px] md:-translate-x-[280px] w-[85%] md:w-auto transition-transform duration-300 ease group-hover:scale-105"
-                    width={560}
-                    height={450}
-                  />
+                <div className="w-full md:w-[560px] h-[275px] md:h-[450px] overflow-hidden bg-[#e8002d] relative flex justify-center items-center">
+                  <div className="relative w-[80%] h-[80%]">
+                    <Image
+                      src="/f1stats-gradient-img.png"
+                      alt=""
+                      fill
+                      className="absolute inset-0 w-full h-full object-cover opacity-15 select-none pointer-events-none"
+                    />
+                    <Image
+                      src="/f1stats-img.webp"
+                      alt=""
+                      fill
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease group-hover:scale-105"
+                    />
+                  </div>
                 </div>
                 <div className="bg-[#303030] w-full md:w-[560px] h-[44px] flex flex-row items-center justify-between no-underline">
                   <h2 className="font-['Instrument_Sans'] font-bold text-2xl text-white pl-2.5">
@@ -217,21 +217,21 @@ export default function Home() {
             </ScrollAnimation>
             <ScrollAnimation className="flex flex-col w-[90%] md:w-full">
               <Link href="/onyx" className="no-underline group">
-                <div className="w-full md:w-[560px] h-[275px] md:h-[450px] overflow-hidden flex justify-center items-center bg-[#b948d8]">
-                  <Image
-                    src="/onyx-gradient-img.png"
-                    alt=""
-                    className="max-w-full max-h-full object-cover translate-x-[165px] md:translate-x-[253px] z-[3] select-none pointer-events-none"
-                    width={560}
-                    height={450}
-                  />
-                  <Image
-                    src="/onyx-img.webp"
-                    alt=""
-                    className="max-w-[90%] md:max-w-[90%] max-h-full object-cover -translate-x-[140px] md:-translate-x-[280px] w-[95%] md:w-auto transition-transform duration-300 ease group-hover:scale-105"
-                    width={560}
-                    height={450}
-                  />
+                <div className="w-full md:w-[560px] h-[275px] md:h-[450px] overflow-hidden bg-[#b948d8] relative flex justify-center items-center">
+                  <div className="relative w-[80%] h-[80%]">
+                    <Image
+                      src="/onyx-gradient-img.png"
+                      alt=""
+                      fill
+                      className="absolute inset-0 w-full h-full object-cover translate-x-[165px] md:translate-x-[253px] z-[3] select-none pointer-events-none"
+                    />
+                    <Image
+                      src="/onyx-img.webp"
+                      alt=""
+                      fill
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease group-hover:scale-105"
+                    />
+                  </div>
                 </div>
                 <div className="bg-[#303030] w-full md:w-[560px] h-[44px] flex flex-row items-center justify-between no-underline">
                   <h2 className="font-['Instrument_Sans'] font-bold text-2xl text-white pl-2.5">

@@ -66,7 +66,7 @@ export default function Recrd() {
             </div>
             <div className="flex flex-row items-start justify-center">
               <Button
-                href="https://ntw234.xyz/home"
+                href="https://recrd.top/login"
                 icon="/earth.svg"
                 iconAlt="Website"
               >
@@ -276,7 +276,7 @@ export default function Recrd() {
                 <p className="text-[#818181] mt-0.5 md:text-balance text-base leading-[33px]">
                   Leaderboards display top-ranked albums and top-ranked users,
                   creating an incentive for deeper engagement and encouraging
-                  users to rank more albums
+                  users to rank more albums.
                 </p>
               </div>
             </ScrollAnimation>
@@ -453,7 +453,7 @@ export default function Recrd() {
             </p>
           </ScrollAnimation>
           <div className="w-full md:w-auto h-px my-6 bg-[#474747]"></div>
-          <a href="" className="group">
+          <a href="https://recrd.top/login" target="_blank" className="group">
             <div className="flex items-center font-bold text-4xl justify-between md:justify-start md:text-6xl md:gap-7 text-white">
               <h1 className="">
                 Try <span className=" text-(--recrd-color)">recrd </span>

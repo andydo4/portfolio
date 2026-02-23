@@ -27,7 +27,7 @@ export default function Work() {
 
         <ScrollAnimation className="flex flex-row items-center w-full justify-between md:justify-end gap-1.25 mt-5">
           <a
-            href="/2025-Andrew-Do-Resume.pdf"
+            href="/2026-Andrew-Do-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-row items-center justify-center gap-1.75 m-1.25 text-white text-xs font-medium w-15 h-7 px-2.5 py-1.25 rounded-[5px] transition-transform duration-300 ease hover:scale-110"
@@ -76,6 +76,21 @@ export default function Work() {
       <div className="w-full font-['Instrument_Sans']">
         <ScrollAnimation>
           <div>
+            <p className="text-[#818181] font-semibold">Incoming Summer 2026</p>
+            <div className="flex gap-2 items-center">
+              <h2 className="mt-0 text-[#6400e7] font-bold text-[40px] text-left">
+                NBCUniversal
+              </h2>
+            </div>
+          </div>
+        </ScrollAnimation>
+        <ScrollAnimation className="flex flex-col md:flex-row items-center justify-between mb-[50px]">
+          <ul className="list-disc text-[#818181] text-base mt-3 mb-0 pl-6">
+            <li>NBC News Digital - Consumer Web</li>
+          </ul>
+        </ScrollAnimation>
+        <ScrollAnimation>
+          <div>
             <p className="text-[#818181] font-semibold">July 2025 - Present</p>
             <div className="flex gap-2 items-center">
               <h2 className="mt-0 text-white font-bold text-[40px] text-left">
@@ -95,12 +110,24 @@ export default function Work() {
               single page load architecture
             </li>
             <li>
-              Established a CI/CD pipeline on GitLab to ensure automated testing
-              and rapid delivery of prototypes
+              Established a CI/CD pipeline on GitLab for automated testing and
+              integrated Matomo web analytics
+            </li>
+            <li>
+              Engineered a custom OAuth2 Single-Sign-On (SSO) and implemented
+              role-based access control (RBAC)
+            </li>
+            <li>
+              Secured local and staging environments by setting up end-to-end
+              encryption using HTTPS via mkcert
             </li>
             <li>
               Drove user experience (UX) improvements by conducting employee
               interviews and feedback sessions
+            </li>
+            <li>
+              Developing a Content Management System (CMS) by writing a dynamic,
+              array-driven TypeScript architecture
             </li>
           </ul>
         </ScrollAnimation>

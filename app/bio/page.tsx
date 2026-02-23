@@ -43,7 +43,7 @@ export default function Bio() {
         </p>
         <ScrollAnimation className="flex flex-row items-center justify-center gap-1.25 mt-5">
           <a
-            href="/2025-Andrew-Do-Resume.pdf"
+            href="/2026-Andrew-Do-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-row items-center justify-center gap-1.75 m-1.25 text-white text-xs font-medium w-15 h-7 px-2.5 py-1.25 rounded-[5px] transition-transform duration-300 ease hover:scale-110"
