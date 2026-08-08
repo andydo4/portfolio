@@ -69,7 +69,7 @@ export default function Home() {
           </div>
           <div>
             <h2
-              className="text-[#acacac] text-[20px] text-center md:text-start leading-tight md:text-[48px] font-medium md:m-2.5 px-[35px] md:px-0 mb-5 md:mb-0"
+              className="text-[#acacac] text-[18px] text-center md:text-start leading-tight md:text-[48px] font-medium md:m-2.5 px-[35px] md:px-0 mb-5 md:mb-0"
               style={{ fontWeight: 550 }}
             >
               Software engineer passionate about building products that people <span className="text-[#ffffff]">enjoy
