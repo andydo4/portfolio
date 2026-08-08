@@ -27,7 +27,7 @@ export default function Work() {
 
         <ScrollAnimation className="flex flex-row items-center w-full justify-between md:justify-end gap-1.25 mt-5">
           <a
-            href="/2026-Andrew-Do-Resume.pdf"
+            href="/Andrew-Do-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-row items-center justify-center gap-1.75 m-1.25 text-white text-xs font-medium w-15 h-7 px-2.5 py-1.25 rounded-[5px] transition-transform duration-300 ease hover:scale-110"
@@ -45,12 +45,12 @@ export default function Work() {
             linkedin
           </a>
           <a
-            href="/work"
+            href="/bio"
             rel="noopener noreferrer"
             className="flex flex-row items-center justify-center gap-1.75 m-1.25 text-white text-xs font-medium w-15 h-7 px-2.5 py-1.25 rounded-[5px] transition-transform duration-300 ease hover:scale-110"
             style={{ background: "var(--blue-color)" }}
           >
-            work
+            bio
           </a>
           <a
             href="https://github.com/andydo4"
@@ -76,7 +76,7 @@ export default function Work() {
       <div className="w-full font-['Instrument_Sans']">
         <ScrollAnimation>
           <div>
-            <p className="text-[#818181] font-semibold">Incoming Summer 2026</p>
+            <p className="text-[#818181] font-semibold">June 2026 - August 2026</p>
             <div className="flex gap-2 items-center">
               <h2 className="mt-0 text-[#6400e7] font-bold text-[40px] text-left">
                 NBCUniversal
@@ -86,12 +86,19 @@ export default function Work() {
         </ScrollAnimation>
         <ScrollAnimation className="flex flex-col md:flex-row items-center justify-between mb-[50px]">
           <ul className="list-disc text-[#818181] text-base mt-3 mb-0 pl-6">
-            <li>NBC News Digital - Consumer Web</li>
+            <li>Shipped production features and bug fixes to NBCNews.com, TODAY.com, and Telemundo.com, collaborating
+                across 2 teams and serving 70+ million unique monthly visitors during peak World Cup traffic</li>
+            <li>Built a Share CTA for NBC News’ vertical video player, serving 700k+ unique monthly viewers</li>
+            <li>Led end-to-end development of a personalized news feed (Figma design, component architecture, and API
+                contract design) enabling users to curate their NBC News content experience</li>
+            <li>Implemented SEO metadata for NBC News’ 2026 Congressional polling page for the midterm election cycle</li>
+            <li>Resolved a GraphQL dependency to surface subscriber-only content badges on NBC News’ saved pages</li>
+            <li>Eliminated 27 Sass deprecation warnings and standardized font-weight tokens across 4 repos</li>
           </ul>
         </ScrollAnimation>
         <ScrollAnimation>
           <div>
-            <p className="text-[#818181] font-semibold">July 2025 - Present</p>
+            <p className="text-[#818181] font-semibold">July 2025 - May 2026</p>
             <div className="flex gap-2 items-center">
               <h2 className="mt-0 text-white font-bold text-[40px] text-left">
                 Lockheed Martin

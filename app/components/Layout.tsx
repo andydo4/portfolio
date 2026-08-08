@@ -65,7 +65,7 @@ export default function Layout({ children }: LayoutProps) {
             linkedin
           </a>
           <a
-            href="/2026-Andrew-Do-Resume.pdf"
+            href="/Andrew-Do-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#474747] hover:text-white transition-colors font-['Instrument_Sans'] text-base"

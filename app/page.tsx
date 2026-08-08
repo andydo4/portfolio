@@ -72,13 +72,15 @@ export default function Home() {
               className="text-[#acacac] text-[20px] text-center md:text-start leading-tight md:text-[48px] font-medium md:m-2.5 px-[35px] md:px-0 mb-5 md:mb-0"
               style={{ fontWeight: 550 }}
             >
-              Computer Science student at <span className="font-bold">UCF</span>{" "}
+              Software engineer passionate about building products that people <span className="text-[#ffffff]">enjoy
+              </span> using.
+              {/* Computer Science student at <span className="font-bold">UCF</span>{" "}
               with a <br className="hidden md:block" />
               passion for{" "}
               <span className="text-[#1e4bae] italic">
                 full-stack development
               </span>{" "}
-              and <span className="text-[#0f6753] italic">UX design.</span>
+              and <span className="text-[#0f6753] italic">UX design.</span> */}
             </h2>
             <div className="flex flex-row pl-0 md:pl-2.5 md:mt-3 justify-center md:justify-start">
               <div className="w-[17%] md:w-[120px] h-[9px] md:h-[15px] bg-[#31BF42]"></div>
@@ -89,7 +91,7 @@ export default function Home() {
             </div>
             <div className="pl-0 md:pl-2.5 justify-center md:justify-start text-xl md:text-2xl font-normal mt-0.5 flex gap-12.5 md:gap-[114px]">
               <a
-                href="/2026-Andrew-Do-Resume.pdf"
+                href="/Andrew-Do-Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#acacac] no-underline hover:text-white"

@@ -26,7 +26,7 @@ export default function Bio() {
           <span className="text-[#f25a2c]">corner </span> of the{" "}
           <span className="text-[#b948d8]">internet</span>
         </h1>
-        <p className="text-left md:text-right mt-1.5 text-base leading-[33px] text-[#818181]">
+        {/* <p className="text-left md:text-right mt-1.5 text-base leading-[33px] text-[#818181]">
           My name is Andrew Do and I&apos;m a computer science student at the
           University of Central Florida with a focus on full-stack development,
           UX/UI design, and product design. Currently, I am a software
@@ -40,10 +40,19 @@ export default function Bio() {
           What sets me apart is my ability to think from both a developer&apos;s
           and user&apos;s perspective. I care about building products that work
           and are intuitive to use.
+        </p> */}
+        <p className="text-left md:text-right mt-1.5 text-base leading-[33px] text-[#818181]">
+         I'm Andrew Do, a rising senior in Computer Science at the University of Central Florida (May 2027).
+         I combine full-stack engineering with product design to build intuitive, scalable products. Previously at NBCUniversal and Lockheed Martin.
+         <br /> <br/>I've completed four internships across diverse environments: startups, large internal-facing teams, 
+          and consumer-facing platforms (NBCNews.com serving 70M+ monthly unique visitors). My experience spans product decisions, 
+          system design, and building production-quality features at scale.<br /><br />With a strong design foundation 
+            (Figma and Photoshop), I prototype and ship interfaces that balance user needs and technical constraints. 
+            Outside of work I build personal projects, cook new recipes, and watch sports with friends.
         </p>
         <ScrollAnimation className="flex flex-row items-center justify-center gap-1.25 mt-5">
           <a
-            href="/2026-Andrew-Do-Resume.pdf"
+            href="/Andrew-Do-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-row items-center justify-center gap-1.75 m-1.25 text-white text-xs font-medium w-15 h-7 px-2.5 py-1.25 rounded-[5px] transition-transform duration-300 ease hover:scale-110"
